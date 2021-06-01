@@ -12,11 +12,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
     <title>Escolha Da Profissão</title>
-    <script>
-        //document.write('<a href="' + document.referrer + '">Go Back</a>');
-
-    </script>
+    <script src="scripts/leituraCurso.js"></script>
 </head>
 
 <body>
@@ -75,10 +76,10 @@
                             class="mdi mdi-arrow-left"></span> Voltar</button></a>
             </div>
             <div class="col-12 banner">
-                <img src="imagem/cienciadacomputacao.jpeg">
+                <img src="assets/img/cienciadacomputacao.jpeg">
             </div>
             <div class="col-12 margem">
-                <h2>Curso de Ciencia da Computação</h2>
+                <h2 id="titulo"><!--Curso de Ciencia da Computação--></h2>
 
             </div>
             <div class="col-12">
@@ -100,12 +101,8 @@
                                 </div>
 
                                 <div class="col-6">
-                                    <div class="starRating">
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
+                                    <div class="starRating" id="estrelas">
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -127,8 +124,8 @@
                                 </div>
 
                                 <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                                    <p><b>
-                                        R$ 5000,00
+                                    <p><b id="remuneracao">
+                                        
                                     </b>
                                     </p>
                                 </div>
@@ -151,8 +148,8 @@
                                 </div>
 
                                 <div class="col-5 col-md-3 col-lg-5">
-                                    <p><b>
-                                        500 milhões
+                                    <p><b id="empregados">
+                                        
                                     </b>
                                     </p>
                                 </div>
@@ -164,14 +161,16 @@
             <div class="col-12 margem">
                 <div class="row">
                     <div class="col-12">
-                        <h4>Como é a carreira em Ciência da Computação</h4>
+                        <h4 id="titulo2">Como é a carreira em Ciência da Computação</h4>
                     </div>
                     <div class="col-12">
-                        <p>
-                            O profissional formado em Ciência da Computação atua basicamente na elaboração de programas
-                            de informática.
-                        </p>
-                        <p>
+                        <ul class="list-group" id="lista-texto-cursos">
+                            <!--<p id="lista-texto-cursos">
+                                O profissional formado em Ciência da Computação atua basicamente na elaboração de programas
+                                de informática.
+                            </p>--> 
+                        </ul>
+                        <!--<p>
                             Um bacharel em Ciência da Computação cria desde ferramentas simples, como um aplicativo
                             financeiro para lançar despesas pessoais, até programas complexos de gerenciamento de
                             produção ou de processamento de informações.
@@ -181,7 +180,7 @@
                             pode ser contratado para trabalhar em uma equipe de desenvolvedores, criando software de
                             acordo com a necessidade dos clientes. Também pode atuar no departamento de Pesquisa e
                             Desenvolvimento (P&D)de uma empresa.
-                        </p>
+                        </p>-->
                     </div>
 
                 </div>
@@ -191,68 +190,39 @@
             <div class="col-12 margem">
                 <div class="row">
                     <div class="col-12">
-                        <h5>Além de atuar como desenvolvedor ou programador, o cientista da computação pode trabalhar
-                            como:</h5>
+                        <h5 id="titulo-ramificacoes"><!--Além de atuar como desenvolvedor ou programador, o cientista da computação pode trabalhar
+                            como:--></h5>
                     </div>
                     
-                    <div class="col-12 fundo baixo">
+                    <p id="ramificacoes">
                         
-                        <p><b>Analista de Sistemas - </b>É responsável por elaborar documentos e alguns modelos que
-                            especificam os requisitos para o desenvolvimento de um software.</p>
-                       
-                            <div class="col-12 espandir" >
-                            <span class="mdi mdi-arrow-expand"></span>
-                            </div>
-                    </div>
-                    <div class="col-12 fundo baixo">
-                        <p><b>Arquiteto de Software - </b>Modela os sistemas e a infraestrutura que o software precisa
+                        <!--
+                        <div class="col-12 fundo baixo">
+                            <p><b>Arquiteto de Software - </b>Modela os sistemas e a infraestrutura que o software precisa
                             para funcionar.</p>
                             <div class="col-12 espandir" >
                                 <span class="mdi mdi-arrow-expand"></span>
-                                </div>
-                    </div>
-                    <div class="col-12 fundo baixo">
-                        <p><b>Gerente de TI - </b>Gerencia os projetos de software, coordenando equipes e planejando o
-                            desenvolvimento de sistemas.</p>
-                            <div class="col-12 espandir" >
-                                <span class="mdi mdi-arrow-expand"></span>
-                                </div>
-                    </div>
-                    <div class="col-12 fundo">
-                        <p><b>Docência ou Pesquisa - </b>Trabalha como professor em instituições de ensino ou desenvolve
-                            pesquisas tecnológicas.</p>
-                            <div class="col-12 espandir" >
-                                <span class="mdi mdi-arrow-expand"></span>
-                                </div>
-                    </div>
+                            </div>
+                        </div>-->
+                    </p>
+                    
 
                 </div>
             </div>
             <div class="col-12 margem">
                 <div class="row">
                     <div class="col-12">
-                        <h5>Além de atuar como desenvolvedor ou programador, o cientista da computação pode trabalhar
-                            como:</h5>
+                        <h5 id="titulo-perfil"></h5>
                     </div>
                     <div class="col-12">
-                        <p>O curso de Ciência da Computação, também chamado de Ciências da Computação, possui muitas
-                            disciplinas de Matemática e boa parte da estrutura curricular é composta por disciplinas
-                            destinadas ao aprendizado das linguagens de programação mais utilizadas.</p>
+                        <p id="texto-perfil"></p>
                     </div>
 
                 </div>
             </div>
             <div class="col-12 margem">
-                <div class="row">
-                    <div class="col-12 col-md-3 col-lg-2 col-xl-2 fundop ">
-                        <p><b>Matemática</b></p>
-                    </div>
-                    <div class="col-12 col-md-4 col-lg-3 col-xl-3 fundop ">
-                        <p><b>Trabalho em Equipe</b></p>
-                    </div>
-                    <div class="col-12 col-md-3  col-lg-2 col-xl-2 fundop">
-                        <p><b>Informática</b></p>
-                    </div>
+                <div class="row" id="categoria">
+                    
                 </div>
             </div>
             <div class="col-12 btnforum">
@@ -282,12 +252,7 @@
 
     <!-- Fim Footer -->
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-        crossorigin="anonymous"></script>
+    
 
 </body>
 
