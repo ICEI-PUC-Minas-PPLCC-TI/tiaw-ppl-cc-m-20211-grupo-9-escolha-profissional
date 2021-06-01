@@ -38,6 +38,7 @@ export type Alternativa = {
 
 export type LeituraCurso = {
   titulo: string
+  imagem: string
   avaliacao: number
   remuneracao: string
   empregados: string

@@ -7,6 +7,7 @@ const cursos = {
   cienciacomputacao: {
     titulo: 'Ciencia da Computação',
     avaliacao: 4,
+    imagem: 'assets/img/cienciadacomputacao.jpeg',
     remuneracao: "R$ 5000,00",
     empregados: "500 milhões",
     textoprincipal:[ 'O profissional formado em Ciência da Computação atua basicamente na elaboração de programas de informática.',
@@ -43,6 +44,8 @@ let busca = urlParams.get('curso');
 const curso = cursos[busca];
 $(()=>{
     $('#titulo').text(`Curso de ${curso.titulo}`)
+    $('#banner').text(`${curso.remuneracao}`)
+    document.getElementById('banner').innerHTML = `<img src="${curso.imagem}">`
     $('#remuneracao').text(`${curso.remuneracao}`)
     $('#empregados').text(`${curso.empregados}`)
     $('#titulo2').text(`Como é a carreira em ${curso.titulo}`)
