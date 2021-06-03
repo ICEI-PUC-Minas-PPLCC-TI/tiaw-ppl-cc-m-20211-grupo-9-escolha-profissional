@@ -37,7 +37,39 @@ const cursos = {
     subtexto:`O curso de Ciência da Computação, também chamado de Ciências da Computação, possui muitas disciplinas de Matemática e boa parte da estrutura curricular é composta por disciplinas destinadas ao aprendizado das linguagens de programação mais utilizadas.`,
     caracteristica:['Matemática','Trabalho em Equipe','Informática']
   },
-  engenhariasoft: {},
+  fisicacomputacional: {
+    titulo: 'Física Computacional',
+    avaliacao: 4,
+    imagem: 'assets/img/galaxies.jpeg',
+    remuneracao: "R$ 6670,00",
+    empregados: "500 mil",
+    textoprincipal:[ 'A Física Computacional tem como principal tarefa conseguir resolver situações que não é possível através dos estudos teóricos. Como é o caso da descoberta de sequências matemáticas, que não podem ser resolvidas por meio das equações matemáticas.',
+        'O uso do computador tem possibilitado entender, aprofundar e desenvolver alternativas eficientes para fenômenos que estão além da controle humano como é caso das tempestades.',
+        'É através dessa tecnologia que a ciência tem evoluído, principalmente na exploração de fenômenos considerados extremos, como é o caso das colisões de partículas subatômicas. É por meio desse conhecimento que são desenvolvidos os chamados supercomputadores.',
+    ],
+    tituloramificacao: `A área de Física Computacional abre portas para muitas ramificações inportantes para atualidade como:`,
+    ramificacao: [
+      {
+        titulo: `Previsão do tempo - `,
+        texto: `Prever o tempo envolve o estudo de conceitos geográficos, físicos e aplicação de uma série de cálculos matemáticos contendo análises combinatórias e estatística.`,
+      },
+      {
+        titulo: `Astrofísica - `,
+        texto: `A astrofísica é uma das ramificações mais conhecidas da Física Computacional. É por meio dela que é possível estimar/calcular a distância entre os planetas, a velocidade de qualquer corpo celeste e a mecânica dos movimentos em geral que rege as constelações e o universo.`,
+      },
+      {
+        titulo: `Nanotecnologia - `,
+        texto: `A nanotecnologia é uma ciência que envolve a manipulação da matéria (com o objetivo de criar novos materiais) a nível atômico.`,
+      },
+      {
+        titulo: `Fusão nuclear - `,
+        texto: `O processo de unificação de dois ou mais núcleos atômicos (fusão nuclear) é um recurso utilizado pela Física moderna para a obtenção de energia em escalas gigantescas.`,
+      },
+    ],
+    titulo3:`Qual é o perfil do profissional formado em Física Computacional:`,
+    subtexto:`O curso de Física Computacional possui muitas disciplinas de Matemática, estatistica e boa parte da estrutura curricular é relacionada a linguagens de programação e supercomputadores.`,
+    caracteristica:['Matemática','Trabalho em Equipe','Informática','Estatística','Física']
+  },
 };
 const urlParams = new URLSearchParams(window.location.search);
 let busca = urlParams.get('curso');
