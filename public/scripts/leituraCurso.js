@@ -67,7 +67,7 @@ const cursos = {
       },
     ],
     titulo3:`Qual é o perfil do profissional formado em Física Computacional:`,
-    subtexto:`O curso de Física Computacional possui muitas disciplinas de Matemática, estatistica e boa parte da estrutura curricular é relacionada a linguagens de programação e supercomputadores.`,
+    subtexto:`O curso de Física Computacional possui muitas disciplinas de Matemática, estatística e boa parte da estrutura curricular é relacionada a linguagens de programação e supercomputadores.`,
     caracteristica:['Matemática','Trabalho em Equipe','Informática','Estatística','Física']
   },
 };
