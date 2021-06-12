@@ -8,7 +8,10 @@
     max-width: 100%;
     background-color: rgba(67, 209, 207, 0.35);
 }
-
+.ifra{
+    width:100%; 
+    height:700px;
+}
 .header p{
     padding-right: 20px;
     margin: 0px;
@@ -83,28 +86,30 @@
 
 .nome, .email, .texto{
     background-color: rgba(67, 209, 207, 0.35);
-    border: 2px solid #6e6e6e;
+    border: 1px solid #6e6e6e;
     border-radius: 10px;
     padding: 10px;
+    margin: 5px;
+    margin-left: 0px;
 }
 
 .texto{
     margin-top: 5px;
     margin-bottom: 20px;
 }
-
-.texto > input{
+.texto > textarea {
     width: 80% !important;
     height: 200px !important;
     max-height: 400px !important;
-    background-color: rgba(67, 209, 207, 0.35);
-    border-radius: 10px;
+    background-color: rgba(190, 236, 235, 0.35);
+    border: none;
+    place-items: top;
 }
 
 .nome > input, .email > input{
     width: 100% !important;
-    background-color: rgba(67, 209, 207, 0.35);
-    border-radius: 10px;
+    background-color: rgba(190, 236, 235, 0.35);
+    border: none;
 }
 
 .img{
@@ -120,11 +125,11 @@
 .contato{
     padding: 20px;
     align-self: center;
-    position: absolute;
-    right: 20%;
     background-color: white;
     border: 1px solid #666666;
-    border-radius: 5px;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-left: 0px;
 }
 
 .button{
@@ -159,7 +164,9 @@
     padding-top: 15px;
     padding-bottom: 15px;
 }
-
+.pad{
+    margin: 0%;
+}
 /* Fim Footer */
 
 /**********************************************************************************************/
@@ -338,4 +345,22 @@
         color: #f1f1f1;
         position: fixed;
     }
+    
+}
+@media screen and (min-width:0px) and (max-width:1000px){
+    .ifra{
+        height: 400px;
+    }
+}
+@media screen and (min-width:1200px){
+  .email{
+    margin: 0px;
+    margin-left: 43px;
+      
+  }
+  .nome{
+        margin: 0px;
+      margin-right: 50px;  
+    }
+
 }

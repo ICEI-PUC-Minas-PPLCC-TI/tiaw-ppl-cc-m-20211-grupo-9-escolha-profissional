@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/Contato.css">
+    <link rel="stylesheet" href="styles/Template.css">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/28d9d72d98.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Contato</title>
 </head>
+
 <body>
-    
+
     <header class="header">
         <img src="assets/img/logo desktop 1 final.png" class="logo">
         <nav class="menu">
@@ -22,14 +26,14 @@
                 <i class="fa fa-times-circle"></i>
             </label>
             <ul class="menu1">
-                <li><a class="menu_transition" href="Template.html">Página Inicial</a></li>
+                <li><a class="menu_transition" href="index.html">Página Inicial</a></li>
                 <li><a class="menu_transition" href="Sobre.html">Sobre</a></li>
-                <li><a class="menu_transition" href="Top.html">Top Cursos</a></li>
-                <li><a class="menu_transition" href="#">Fale Conosco</a></li>
+                <li><a class="menu_transition" href="Top_cursos.html">Top Cursos</a></li>
+                <li><a class="menu_transition" href="Contato.html">Fale Conosco</a></li>
                 <li class="navbarp">
                     <nav class="navbar navbar-light bg-light">
-                        <form class="form-inline">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <form class="form-inline" action="./Busca.html">
+                        <input class="form-control mr-sm-2" type="search" name="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                         </form>
                     </nav>
@@ -51,34 +55,58 @@
 
 
     <main>
-        <section class= "container section">
+        <section class="container section">
             <div class="row imagem">
-                <img class="img" src="assets/img/end_ffinal.png">
-                <div class="contato">
-                    <h4>
-                        Contate-nos
-                    </h4>
-                    <p>
-                        <br>Email:
-                        <br>profissacursos@gmail.com
-                        <br>Tel: 
-                        <br>(31)9999-9999
-                    </p>
+                <!--<img class="img" src="assets/img/end_ffinal.png">-->
+                <div class="col-12">
+                    <iframe class="ifra pad"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3750.797864309573!2d-43.9394574!3d-19.9329211!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa699dc57d681cf%3A0x897f2f71ae2c8900!2sPUC%20Minas%20-%20Unidade%20Pra%C3%A7a%20da%20Liberdade!5e0!3m2!1spt-BR!2sbr!4v1623433078635!5m2!1spt-BR!2sbr"
+                        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
+
+                    <div class="col-12 contato">
+
+
+                        <div class="row">
+                            <div class="col-12">
+                                <h4>
+                                    Contate-nos
+                                </h4>
+                            </div>
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-12  pad">
+                                        <p>Ajude-nos a melhorar, criticas e sugestões fazem nossa plataforma evoluir para você.</p>
+                                    </div>
+                                <div class="col-12 col-md-6 col-lg-6 col-xl-6 pad">
+                                    <p>Email: profissacursos9@gmail.com</p>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-6 col-xl-6 pad">
+                                    <p>Telefone: (31)9999-9999</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                    </div>
+                
             </div>
             <div class="row nomeEmail">
                 <div class="col-12 col-xl-6 nome">
                     <label class="col-12" for="nome">Nome</label>
-                    <input class="col-12" type="text" placeholder="Digite seu nome" name="nome" id="nome" required>
+                    <input class="col-12" type="text" autocomplete="off" placeholder="Digite seu Nome" name="nome"
+                        id="nome" required>
                 </div>
-                <div class="col-12 col-xl-6 email">
+                <div class="col-12 col-xl-5 email">
                     <label class="col-12" for="email">Email</label>
-                    <input class="col-12" type="text" placeholder="Digite seu E-mail" name="email" id="email" required>
+                    <input class="col-12" type="text" autocomplete="off" placeholder="Digite seu E-mail" name="email"
+                        id="email" required>
                 </div>
             </div>
             <div class="row texto">
                 <label class="col-12" for="mensagem">Mensagem</label>
-                <input class="col-12" type="text" placeholder="Digite sua mensagem" name="mensagem" id="mensagem" required>
+                <textarea class="col-12" type="text" autocomplete="off" placeholder="Digite sua Mensagem"
+                    name="mensagem" id="mensagem" required></textarea>
             </div>
             <div class="row button">
                 <a class="button" href="#"><button type="button" class="btn btn-primary">Enviar</button></a>
@@ -96,8 +124,13 @@
 
     <!-- Fim Footer -->
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
 
 </body>
+
 </html>
