@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/Contato.css">
     <link rel="stylesheet" href="styles/Template.css">
-
+    <link rel="shortcut icon" href="assets/logo-v-b.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/28d9d72d98.js" crossorigin="anonymous"></script>
@@ -20,7 +20,7 @@
     <header class="header">
         <img src="assets/img/logo desktop 1 final.png" class="logo">
         <nav class="menu">
-            <input type="checkbox" id="menuToggle" >
+            <input type="checkbox" id="menuToggle">
             <label for="menuToggle" class="menu-icon">
                 <i class="fa fa-bars"></i>
                 <i class="fa fa-times-circle"></i>
@@ -33,22 +33,25 @@
                 <li class="navbarp">
                     <nav class="navbar navbar-light bg-light">
                         <form class="form-inline" action="./Busca.html">
-                        <input class="form-control mr-sm-2" type="search" name="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                            <input class="form-control mr-sm-2" type="search" name="search" placeholder="Search"
+                                aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                         </form>
                     </nav>
                 </li>
                 <li>
                     <div class="button1">
-                        <a class="button" href="Cadastro.html"><button type="button" class="btn btn-primary">Cadastro</button></a>
+                        <a class="button" href="Cadastro.html"><button type="button"
+                                class="btn btn-primary">Cadastro</button></a>
                     </div>
                 </li>
                 <li>
                     <div class="button1">
-                        <a class="button" href="Login.html"><button type="button" class="btn btn-primary">Login</button></a>
+                        <a class="button" href="Login.html"><button type="button"
+                                class="btn btn-primary">Login</button></a>
                     </div>
                 </li>
-            </ul>    
+            </ul>
         </nav>
     </header>
 
@@ -64,20 +67,21 @@
                         style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
 
-                    <div class="col-12 contato">
+                <div class="col-12 contato">
 
 
-                        <div class="row">
-                            <div class="col-12">
-                                <h4>
-                                    Contate-nos
-                                </h4>
-                            </div>
-                            <div class="col-12">
-                                <div class="row">
-                                    <div class="col-12  pad">
-                                        <p>Ajude-nos a melhorar, criticas e sugestões fazem nossa plataforma evoluir para você.</p>
-                                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <h4>
+                                Contate-nos
+                            </h4>
+                        </div>
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12  pad">
+                                    <p>Ajude-nos a melhorar, criticas e sugestões fazem nossa plataforma evoluir para
+                                        você.</p>
+                                </div>
                                 <div class="col-12 col-md-6 col-lg-6 col-xl-6 pad">
                                     <p>Email: profissacursos9@gmail.com</p>
                                 </div>
@@ -85,12 +89,24 @@
                                     <p>Telefone: (31)9999-9999</p>
                                 </div>
                             </div>
-                            </div>
                         </div>
-
                     </div>
-                
+
+                </div>
+
             </div>
+            <!-- <div class="row alert"> -->
+                <div class="col-12 sucesso">
+                    <div id="sucesso" class="alert alert-success">
+                        A mensagem foi enviada com <strong>sucesso</strong> , agradecemos pela critica ou sugestão.
+                    </div>
+                </div>
+                <div id="incompleto" class="col-12 incompleto">
+                    <div class="alert alert-danger">
+                         Os dados digitado então <strong>incompletos</strong>
+                    </div>
+                </div>
+            <!-- </div> -->
             <div class="row nomeEmail">
                 <div class="col-12 col-xl-6 nome">
                     <label class="col-12" for="nome">Nome</label>
@@ -109,7 +125,8 @@
                     name="mensagem" id="mensagem" required></textarea>
             </div>
             <div class="row button">
-                <a class="button" href="#"><button type="button" class="btn btn-primary">Enviar</button></a>
+                <a id="btncontato" class="button" href="#" onclick="salva()"><button id="btncontato" type="button"
+                        class="btn btn-primary">Enviar</button></a>
             </div>
         </section>
     </main>
@@ -130,6 +147,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
+    <script src="scripts/contato.js"></script>
+
+    <script>function salva() {
+            event.preventDefault();
+            enviarcomentario()
+        }</script>
+
 
 </body>
 

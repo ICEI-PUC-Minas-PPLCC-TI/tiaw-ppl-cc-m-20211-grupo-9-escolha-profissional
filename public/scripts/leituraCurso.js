@@ -35,7 +35,7 @@ const cursos = {
     ],
     titulo3:`Qual é o perfil do profissional formado em Ciência da Computação:`,
     subtexto:`O curso de Ciência da Computação, também chamado de Ciências da Computação, possui muitas disciplinas de Matemática e boa parte da estrutura curricular é composta por disciplinas destinadas ao aprendizado das linguagens de programação mais utilizadas.`,
-    caracteristica:['Matemática','Trabalho em Equipe','Informática']
+    caracteristica:['Matemática','Trabalho em Equipe','Computação']
   },
   fisicacomputacional: {
     titulo: 'Física Computacional',
@@ -68,7 +68,7 @@ const cursos = {
     ],
     titulo3:`Qual é o perfil do profissional formado em Física Computacional:`,
     subtexto:`O curso de Física Computacional possui muitas disciplinas de Matemática, estatística e boa parte da estrutura curricular é relacionada a linguagens de programação e supercomputadores.`,
-    caracteristica:['Matemática','Trabalho em Equipe','Informática','Estatística','Física']
+    caracteristica:['Matemática','Trabalho em Equipe','Computação','Estatística','Física']
   },
 };
 const urlParams = new URLSearchParams(window.location.search);

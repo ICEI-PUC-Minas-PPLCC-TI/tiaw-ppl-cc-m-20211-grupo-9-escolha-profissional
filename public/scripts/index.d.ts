@@ -49,3 +49,9 @@ export type LeituraCurso = {
   subtexto: string
   caracteristica: string[]
 }
+
+export type Contato = {
+  nome: string[]
+  email: string[]
+  mensagem: string[]
+}
