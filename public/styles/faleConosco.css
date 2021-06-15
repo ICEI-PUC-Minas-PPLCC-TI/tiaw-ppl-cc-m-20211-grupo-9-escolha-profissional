@@ -106,7 +106,7 @@
     place-items: top;
 }
 
-.nome > input, .email > input{
+.nome input, .email input{
     width: 100% !important;
     background-color: rgba(190, 236, 235, 0.35);
     border: none;
@@ -167,6 +167,8 @@
 .pad{
     margin: 0%;
 }
+
+
 /* Fim Footer */
 
 /**********************************************************************************************/
@@ -347,6 +349,7 @@
     }
     
 }
+
 @media screen and (min-width:0px) and (max-width:1000px){
     .ifra{
         height: 400px;

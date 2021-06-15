@@ -27,7 +27,7 @@ function enviarcomentario() {
         });
         faleConosco.push(contato);
         localStorage.setItem("faleConosco", JSON.stringify(faleConosco));
-        $('#incompleto').hide()
+        $("#incompleto").hide();
         $('#sucesso').show();
         console.log(faleConosco);
     } else {
