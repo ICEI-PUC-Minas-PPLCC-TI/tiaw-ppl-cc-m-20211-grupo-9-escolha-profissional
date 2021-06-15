@@ -25,7 +25,7 @@ export type Peso = {
 
 export type Pergunta = {
   descricao: string
-  escolhas: { [key: string]: string }//indica um objeto onde a chave é string
+  escolhas: { [key: string]: string } //indica um objeto onde a chave é string
   alternativas: Alternativa[]
   titulo: string
   wrapper: JQuery<HTMLElement>
@@ -44,7 +44,7 @@ export type LeituraCurso = {
   empregados: string
   textoprincipal: string[]
   tituloramificacao?: string
-  ramificacao?: {titulo:string,texto:string}[]
+  ramificacao?: { titulo: string; texto: string }[]
   titulo3: string
   subtexto: string
   caracteristica: string[]
@@ -54,4 +54,12 @@ export type Contato = {
   nome: string[]
   email: string[]
   mensagem: string[]
+}
+
+export type TopCurso = {
+  avaliacao: number
+  categorias: string[]
+  descricao: string
+  imagem: string
+  titulo: string
 }
