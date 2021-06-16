@@ -99,8 +99,13 @@
         let resultados = 0;
         let db = leInfo();
         var cursosList = ' ';
+        let cursodb;
+
+        const regex = new RegExp('\\b' + busca.normalize("NFD").replace(/[\u0300-\u036f]/g, ""), "ig");
+
         for(i = 0; i < db.cursos.length; i++){
-            if ((busca.toLowerCase()).match((db.cursos[i].curso).toLowerCase())) {
+            cursodb = db.cursos[i].curso;
+            if ((cursodb.normalize("NFD").replace(/[\u0300-\u036f]/g, "").match(regex))) {
               cursosList += `<a href="" class="text-decoration-none" style="color: #39b3b1;"><li class="list-group-item">${db.cursos[i].curso}</li></a>`;
               resultados++;
             }
