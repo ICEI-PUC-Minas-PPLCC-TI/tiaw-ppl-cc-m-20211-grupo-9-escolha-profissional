@@ -12,7 +12,15 @@ function enviarcomentario() {
     var nomelei = document.getElementById('nome').value;
     var emaillei = document.getElementById('email').value;
     var mensagemlei = document.getElementById('mensagem').value;
-    if (nomelei != "" && emaillei != "" && mensagemlei != "") {
+    if (nomelei == "" || emaillei == "" || mensagemlei == "" ) {
+        $('#arobaponto').hide();
+        $('#sucesso').hide();
+        $('#incompleto').show()
+    }else if(emaillei.indexOf('@')== -1 || emaillei.indexOf('.')==-1){
+        $('#arobaponto').show()
+        $('#incompleto').hide()
+        $('#sucesso').hide();
+    }else {
         console.log(nomelei);
         console.log(emaillei);
         console.log(mensagemlei);
@@ -28,16 +36,15 @@ function enviarcomentario() {
         faleConosco.push(contato);
         localStorage.setItem("faleConosco", JSON.stringify(faleConosco));
         $("#incompleto").hide();
+        $('#arobaponto').hide();
         $('#sucesso').show();
         console.log(faleConosco);
-    } else {
-        $('#incompleto').show()
-        $('#sucesso').hide();
     }
 }
 $(()=>{
     $('#sucesso').hide();
     $('#incompleto').hide();
+    $('#arobaponto').hide();
 })
 //document.getElementById('btncontato').addEventListener('click', enviarcomentario);
 //document.getElementById('btncontato').onclick(enviarcomentario);
