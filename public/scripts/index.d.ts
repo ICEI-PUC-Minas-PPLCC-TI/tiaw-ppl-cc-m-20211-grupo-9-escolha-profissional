@@ -59,7 +59,9 @@ export type Contato = {
 export type TopCurso = {
   avaliacao: number
   categorias: string[]
+  comentarios: number
   descricao: string
   imagem: string
+  remuneracao: string
   titulo: string
 }
