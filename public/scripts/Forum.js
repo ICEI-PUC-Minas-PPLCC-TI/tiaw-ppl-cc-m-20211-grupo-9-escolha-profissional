@@ -14,7 +14,8 @@ var defaultThreads = [
         {
             author: "Pedro Henrique Paschoal",
             date: Date.now(),
-            content: "Estou ansionso para utilizar essa ferramenta!"
+            content: "Estou ansionso para utilizar essa ferramenta!",
+            rating: 0
         }
     ]
 },
@@ -28,7 +29,8 @@ var defaultThreads = [
         {
             author: "Profissa",
             date: Date.now(),
-            content: "A equipe da Profissa agradece pelo seu feedback e o entusiasmo com relação a nossa nova plataforma. Obrigado e esperamos te ajudar na suas escolhas profissionais Gabriel!"
+            content: "A equipe da Profissa agradece pelo seu feedback e o entusiasmo com relação a nossa nova plataforma. Obrigado e esperamos te ajudar na suas escolhas profissionais Gabriel!",
+            rating: 0
         }
     ]
 }
@@ -41,3 +43,15 @@ if(localStorage && localStorage.getItem('threads')) {
     threads = defaultThreads;
     localStorage.setItem('threads', JSON.stringify(defaultThreads));
 }
+
+let likebtn = document.querySelector('#likebtn');
+let dislikebtn = document.querySelector('#dislikebtn');
+let input1 = document.querySelector('#input1');
+let input2 = document.querySelector('#input2');
+likebtn.addEventListener('click',()=>{
+    input.value = parseInt(input1.value) + 1;
+})
+
+dislikebtn.addEventListener('click',()=>{
+    input2.value = parseInt(input2.value) + 1;
+})
