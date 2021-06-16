@@ -31,7 +31,7 @@
     <div class="main">
         <div class="Topic"></div>
         <textarea></textarea>
-        <button>Comentar</button>
+        <button class="comentar">Comentar</button>
         <div class="comments"></div>
     </div>
     <script src="scripts/Forum.js"></script>
@@ -65,6 +65,19 @@
                     <div class="comment-content">
                         ${comment.content}
                     </div>
+                    <div class="ratings">
+                        <div class="voting">
+                            <button id="likebtn">
+                                <i class="fa fa-thumbs-up"></i>
+                            </button>
+                            <input type="number" id="input1" value="0" name="">
+                            
+                            <button id="dislikebtn">
+                                <i class ="fa fa-thumbs-down"></i>
+                            </button>
+                            <input type="number" id="input2" value="0" name="">
+                        </div>  
+                    </div> 
                     <div class="separation">¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯</div>
                 </div>
             `
@@ -88,7 +101,7 @@
             txt.value = '';
             thread.comments.push(comment);
             localStorage.setItem('threads', JSON.stringify(threads));
-        })
+    })
     </script>
     <!-- Footer -->
 
