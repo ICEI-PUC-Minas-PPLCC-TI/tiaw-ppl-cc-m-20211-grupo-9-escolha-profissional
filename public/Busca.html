@@ -106,6 +106,10 @@
         const urlParams = new URLSearchParams(window.location.search);
         let busca = urlParams.get('search');
         document.getElementById('textoBusca').innerHTML = `Resultados para "${busca}"`;
+        if (busca == '' || !urlParams.get('search')) {
+            document.getElementById('textoBusca').innerHTML = ``;
+            busca = ''
+        }
         let resultados = 0;
         let db = leInfo();
         var cursosList = ' ';
