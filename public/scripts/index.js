@@ -4,7 +4,7 @@
  * @type {{[key: string]: import(".").TelaIicial}} //tipo, objeto,todos as propriedades dele string = [key: string]: string tipo dela tambem é uma string
  */
 const cursos = {
-    2: {
+    1: {
         id: 2,
         titulo: 'Física Computacional',
         avaliacao: 4,
@@ -12,14 +12,14 @@ const cursos = {
         remuneracao: 6670,
 
     },
-    3: {
+    2: {
         id: 3,
         titulo: 'Direito',
         avaliacao: 4,
         quantramificacao: 14,
         remuneracao: 4542,
     },
-    1: {
+    3: {
         id: 1,
         titulo: 'Ciencia da Computação',
         avaliacao: 4,
