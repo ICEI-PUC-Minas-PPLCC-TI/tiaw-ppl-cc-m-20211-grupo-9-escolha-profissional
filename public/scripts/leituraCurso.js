@@ -8,7 +8,7 @@ const cursos = {
     titulo: 'Ciencia da Computação',
     avaliacao: 4,
     imagem: 'assets/img/cienciadacomputacao.jpeg',
-    remuneracao: 'R$ 5000,00',
+    remuneracao: 'R$ 3000,00',
     empregados: '500 milhões',
     textoprincipal: [
       'O profissional formado em Ciência da Computação atua basicamente na elaboração de programas de informática.',

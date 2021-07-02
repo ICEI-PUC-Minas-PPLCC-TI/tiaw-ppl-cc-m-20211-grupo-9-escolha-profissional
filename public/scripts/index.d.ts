@@ -49,7 +49,13 @@ export type LeituraCurso = {
   subtexto: string
   caracteristica: string[]
 }
-
+export type TelaIicial = {
+  id: number
+  titulo: string
+  avaliacao: number
+  quantramificacao: number
+  remuneracao: number
+}
 export type Contato = {
   nome: string
   email: string
