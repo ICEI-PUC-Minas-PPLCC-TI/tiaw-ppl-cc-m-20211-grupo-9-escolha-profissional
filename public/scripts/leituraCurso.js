@@ -88,6 +88,8 @@ $(() => {
       $('#titulo').text(`Não há nenhum conteudo sobre ${urlParams.get('curso')}`)
     }
     else {
+      $('#barraazul').hide();
+      
       $('#titulo').text(`Pagina não encontrada`)
     }
   }
@@ -131,9 +133,7 @@ $(() => {
   for (i = 0; i < li2.length; i++) {
     cursosList += `<div class="col-12 fundo baixo">
                           <p><b>${curso.ramificacao[i].titulo}</b>${curso.ramificacao[i].texto}</p>
-                          <div class="col-12 espandir">
-                            <span class="mdi mdi-arrow-expand"></span>
-                          </div>
+                          <p><p>
                         </div>`
     //cursosList2 +=`<p><b>${curso.ramificacao[i].titulo}</b>${curso.ramificacao[i].texto}</p>`;
   }
