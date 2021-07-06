@@ -40,7 +40,7 @@ const cursos = {
   },
   2: {
     titulo: 'Física Computacional',
-    avaliacao: 4,
+    avaliacao: 5,
     imagem: 'assets/img/galaxies.jpeg',
     remuneracao: 'R$ 6670,00',
     empregados: '500 mil',

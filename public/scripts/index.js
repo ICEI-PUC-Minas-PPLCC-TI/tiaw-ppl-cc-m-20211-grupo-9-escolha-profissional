@@ -7,7 +7,7 @@ const cursos = {
     1: {
         id: 2,
         titulo: 'Física Computacional',
-        avaliacao: 4,
+        avaliacao: 5,
         quantramificacao: 4,
         remuneracao: 6670,
 
@@ -15,7 +15,7 @@ const cursos = {
     2: {
         id: 3,
         titulo: 'Direito',
-        avaliacao: 4,
+        avaliacao: 4.5,
         quantramificacao: 14,
         remuneracao: 4542,
     },
@@ -43,12 +43,11 @@ $(() => {
         var estrela = ' '
         var ramifica = ' '
 
-
         for (i = 0; i < Math.trunc(curso.avaliacao) + 1; i++) {
             if (i == Math.trunc(curso.avaliacao)) {
                 if (
                     curso.avaliacao - Math.trunc(curso.avaliacao) >= 0.3 &&
-                    curso.javaliacao - Math.trunc(curso.avaliacao) <= 0.7
+                    curso.avaliacao - Math.trunc(curso.avaliacao) <= 0.7
                 ) {
                     estrela += `<span class="fa fa-star-half checked"></span>`
                 }
