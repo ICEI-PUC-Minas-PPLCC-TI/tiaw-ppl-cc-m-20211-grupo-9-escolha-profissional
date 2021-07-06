@@ -14,6 +14,29 @@ const cursos = [
     titulo: 'Ciência da Computação',
     comentarios: 13,
     remuneracao: 3000,
+    id: 1,
+  },
+  {
+    avaliacao: 5,
+    categorias: ['Física', 'Programação'],
+    descricao:
+      'O profissional formado em Física Computacional possui uma visão mista da Física e da Computação e pode atuar na solução de problemas que necessitem de conhecimento nas duas áreas.',
+    imagem: 'assets/img/mc top cursos.jpg',
+    titulo: 'Física Computacional',
+    comentarios: 15,
+    remuneracao: 6670,
+    id: 2,
+  },
+  {
+    avaliacao: 4.5,
+    categorias: ['Direito', 'Advocacia'],
+    descricao:
+      'O profissional formado no curso de Direito podem optar por seguir a carreira jurídica ou se tornar advogado. As duas opções oferecem diversas profissões e caminhos a seguir. Para atuar como advogado, o bacharel em Direito precisa realizar o Exame da OAB (Ordem dos Advogados do Brasil). Somente após ser aprovado nesta prova é que o profissional recebe o registro na OAB e pode exercer a profissão.',
+    imagem: 'assets/img/direito top cursos.jpg',
+    titulo: 'Direito',
+    comentarios: 28,
+    remuneracao: 4542,
+    id: 3,
   },
   {
     avaliacao: 5,
@@ -24,26 +47,7 @@ const cursos = [
     titulo: 'Medicina',
     comentarios: 51,
     remuneracao: 4000,
-  },
-  {
-    avaliacao: 4,
-    categorias: ['Matemática', 'Programação'],
-    descricao:
-      'O profissional formado em Matemática Computacional possui uma visão mista da Matemática e da Computação e pode atuar na solução de problemas que necessitem de conhecimento nas duas áreas.',
-    imagem: 'assets/img/mc top cursos.jpg',
-    titulo: 'Matemática Computacional',
-    comentarios: 15,
-    remuneracao: 3400,
-  },
-  {
-    avaliacao: 3,
-    categorias: ['Direito', 'Advocacia'],
-    descricao:
-      'O profissional formado no curso de Direito podem optar por seguir a carreira jurídica ou se tornar advogado. As duas opções oferecem diversas profissões e caminhos a seguir. Para atuar como advogado, o bacharel em Direito precisa realizar o Exame da OAB (Ordem dos Advogados do Brasil). Somente após ser aprovado nesta prova é que o profissional recebe o registro na OAB e pode exercer a profissão.',
-    imagem: 'assets/img/direito top cursos.jpg',
-    titulo: 'Direito',
-    comentarios: 28,
-    remuneracao: 3800,
+    id: 4,
   },
   {
     avaliacao: 3,
@@ -54,6 +58,7 @@ const cursos = [
     titulo: 'Engenharia da Computação',
     comentarios: 20,
     remuneracao: 3700,
+    id: 5,
   },
   {
     avaliacao: 2,
@@ -64,6 +69,7 @@ const cursos = [
     titulo: 'Ciências Contábeis',
     comentarios: 37,
     remuneracao: 3100,
+    id: 6,
   },
   {
     avaliacao: 4,
@@ -74,6 +80,7 @@ const cursos = [
     titulo: 'Engenharia Aeronáutica',
     comentarios: 21,
     remuneracao: 6000,
+    id: 7,
   },
   {
     avaliacao: 4,
@@ -84,6 +91,7 @@ const cursos = [
     titulo: 'Engenharia Aeroespacial',
     comentarios: 8,
     remuneracao: 6700,
+    id: 8,
   },
   {
     avaliacao: 1,
@@ -94,6 +102,7 @@ const cursos = [
     titulo: 'Design Gráfico',
     comentarios: 29,
     remuneracao: 2700,
+    id: 9,
   },
 ]
 
@@ -141,10 +150,13 @@ class TopCursos {
   #rating(avaliacao) {
     return new Array(5)
       .fill(1)
-      .map(
-        (v, k) =>
-          `<span class="fa fa-star ${k < avaliacao ? 'checked' : ''}"></span>`
-      )
+      .map((v, k) => {
+        console.log(avaliacao, k)
+        if (avaliacao - 1 >= k)
+          return `<span class="fa fa-star checked"></span>`
+        if (avaliacao - 1 >= k - 0.5)
+          return `<span class="fa fa-star-half checked"></span>`
+      })
       .join('')
   }
 
@@ -189,9 +201,11 @@ class TopCursos {
               </div>
               <div class="row dentroCurso">
                 <div class="col-12 col-xl-3 cursoImgDiv mb-2">
-                  <img src="${
-                    v.imagem
-                  }" class="cursoImg w-100 rounded" style="object-fit: cover;">
+                  <a href="/leituraCurso.html?id=${v.id}">
+                    <img src="${
+                      v.imagem
+                    }" class="cursoImg w-100 rounded" style="object-fit: cover;">
+                  </a>
                 </div>
                 <div class="col-12 col-xl-9 cursoTexto">
                   <div class="row rakingEtitulo">
