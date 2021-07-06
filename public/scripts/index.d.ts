@@ -67,6 +67,7 @@ export type TopCurso = {
   categorias: string[]
   comentarios: number
   descricao: string
+  id: number
   imagem: string
   remuneracao: string
   titulo: string
