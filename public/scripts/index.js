@@ -62,27 +62,27 @@ $(() => {
         }
         cursosList += `
                 <div class="row aval ciencia" onclick="location = 'leituraCurso.html?id=${curso.id}'">
-                    <div class="col-12 col-xl-4 nomeDoCurso">
+                    <div class="col-12 col-md-4 col-xl-4 nomeDoCurso">
                         <p>
                             ${curso.titulo}
                         </p>
                     </div>
-                    <div class="col-xl-1 traçoEntre">
+                    <div class="col-12 col-md-1 col-lg-1 col-xl-1 traçoEntre">
                         <p>
                             -
                         </p>
                     </div>
-                    <div class="col-12 col-xl-3 ramificacoes">
+                    <div class="col-12 col-md-3 col-xl-3 ramificacoes">
                         <p>
                             ${ramifica}
                         </p>
                     </div>
-                    <div class="col-xl-1 traçoEntre">
+                    <div class="col-12 col-md-1 col-lg-1 col-xl-1 traçoEntre">
                         <p>
                             -
                         </p>
                     </div>
-                    <div class="col-12 col-xl-3 rating">
+                    <div class="col-12 col-md-3 col-xl-3 rating">
                         ${estrela}
                     </div>
                 </div>`
@@ -90,27 +90,27 @@ $(() => {
         cursosList2 += ` 
         
                     <div class="row aval ciencia" onclick="location = 'leituraCurso.html?id=${curso.id}'">
-                        <div class="col-12 col-xl-4 nomeDoCurso">
+                        <div class="col-12 col-md-4 col-xl-4 nomeDoCurso">
                             <p>
                                 ${curso.titulo}
                             </p>
                         </div>
-                        <div class="col-xl-1 traçoEntre">
+                        <div class="col-12 col-md-1 col-lg-1 col-xl-1 traçoEntre">
                             <p>
                                 -
                             </p>
                         </div>
-                        <div class="col-12 col-xl-3 ramificacoes">
+                        <div class="col-12 col-md-3 col-xl-3 ramificacoes">
                             <p>
                                 ${ramifica}
                             </p>
                         </div>
-                        <div class="col-xl-1 traçoEntre">
+                        <div class="col-12 col-md-1 col-lg-1 col-xl-1 traçoEntre">
                             <p>
                                 -
                             </p>
                         </div>
-                        <div class="col-12 col-xl-3 rating">
+                        <div class="col-12 col-md-3 col-xl-3 rating">
                             <p>
                                 Média: R$${curso.remuneracao},00
                             </p>
